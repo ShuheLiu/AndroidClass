@@ -23,23 +23,88 @@
 
     <ListView
         android:id="@+id/courseList"
-        android:layout_width="0dp"
-        android:layout_height="550dp"
-        android:layout_marginBottom="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginBottom="70dp"
         android:divider="#96B4F0"
         android:dividerHeight="2dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></ListView>
+        app:layout_constraintBottom_toBottomOf="parent"></ListView>
+
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="100dp">
+        tools:layout_editor_absoluteX="1dp">
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#747474" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/homePage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="bottom|center"
+                android:padding="6dp"
+                android:text="课程列表"
+                android:textColor="@drawable/selector_radiogroup"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/personal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="bottom|center"
+                android:padding="6dp"
+                android:text="我的课程"
+                android:textColor="@drawable/selector_radiogroup"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="bottom|center"
+                android:padding="6dp"
+                android:text="资料搜索"
+                android:textColor="@drawable/selector_radiogroup"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/mySelf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="bottom|center"
+                android:padding="6dp"
+                android:text="个人设置"
+                android:textColor="@drawable/selector_radiogroup"
+                android:textSize="20sp" />
+        </RadioGroup>
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
