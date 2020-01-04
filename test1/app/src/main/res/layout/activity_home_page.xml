@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     tools:context=".homePage">
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,83 +28,31 @@
         android:layout_marginBottom="70dp"
         android:divider="#96B4F0"
         android:dividerHeight="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"></ListView>
+        app:layout_constraintBottom_toBottomOf="parent"></ListView>-->
 
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <LinearLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bottomMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenu"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp">
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#747474" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/homePage"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/selector_background"
-                android:button="@null"
-                android:checked="true"
-                android:gravity="bottom|center"
-                android:padding="6dp"
-                android:text="课程列表"
-                android:textColor="@drawable/selector_radiogroup"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/personal"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/selector_background"
-                android:button="@null"
-                android:checked="true"
-                android:gravity="bottom|center"
-                android:padding="6dp"
-                android:text="我的课程"
-                android:textColor="@drawable/selector_radiogroup"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/search"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/selector_background"
-                android:button="@null"
-                android:checked="true"
-                android:gravity="bottom|center"
-                android:padding="6dp"
-                android:text="资料搜索"
-                android:textColor="@drawable/selector_radiogroup"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/mySelf"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/selector_background"
-                android:button="@null"
-                android:checked="true"
-                android:gravity="bottom|center"
-                android:padding="6dp"
-                android:text="个人设置"
-                android:textColor="@drawable/selector_radiogroup"
-                android:textSize="20sp" />
-        </RadioGroup>
-    </FrameLayout>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemTextColor="@drawable/selector_radiogroup"
+        app:itemIconTint="@drawable/selector_radiogroup"
+        app:menu="@menu/menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

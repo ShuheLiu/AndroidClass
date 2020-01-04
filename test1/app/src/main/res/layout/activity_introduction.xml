@@ -21,17 +21,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <!--<Button
         android:id="@+id/attend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="85dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="35dp"
         android:background="#FF9632"
         android:text="参加课程"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -61,12 +61,11 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40sp"
                     android:gravity="center_vertical"
-                    android:text="课程1"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -80,16 +79,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:gravity="center_vertical"
-                    android:text="开课时间"
+                    android:text="课程编号"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40sp"
                     android:gravity="center_vertical"
-                    android:text="2019"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -103,18 +101,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:gravity="center_vertical"
-                    android:text="课程信息"
+                    android:text="开课时间"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/openDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40sp"
                     android:gravity="center_vertical"
                     android:maxWidth="230dp"
                     android:singleLine="false"
-                    android:text="hello world hello world hello world hello hello world hello world world hello world hello world hello world"
                     android:textSize="18sp" />
 
             </TableRow>
@@ -129,22 +126,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:gravity="center_vertical"
-                    android:text="教学大纲"
+                    android:text="课程介绍"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40sp"
                     android:gravity="center_vertical"
                     android:maxWidth="230dp"
                     android:singleLine="false"
-                    android:text="world hello world hello world hello hello world hello world hello world hello world hello world hello hello world hello world hello world hello world hello world hello hello world hello world world hello hello world hello world world hello world hello world hello world"
                     android:textSize="18sp" />
 
             </TableRow>
         </TableLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:text="返回"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
